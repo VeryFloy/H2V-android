@@ -4,7 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.ExitToApp
+import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -123,7 +123,7 @@ fun ProfileScreen(
             colors = ButtonDefaults.textButtonColors(contentColor = H2VColors.Error),
             modifier = Modifier.padding(bottom = 32.dp)
         ) {
-            Icon(Icons.Default.ExitToApp, null, modifier = Modifier.size(20.dp))
+            Icon(Icons.AutoMirrored.Filled.ExitToApp, null, modifier = Modifier.size(20.dp))
             Spacer(Modifier.width(8.dp))
             Text("Log out")
         }

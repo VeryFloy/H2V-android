@@ -8,7 +8,7 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Send
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -80,7 +80,7 @@ fun ChatInput(
                 )
         ) {
             Icon(
-                Icons.Default.Send,
+                Icons.AutoMirrored.Filled.Send,
                 contentDescription = "Send",
                 tint = if (value.isNotBlank()) H2VColors.TextOnAccent else H2VColors.TextTertiary,
                 modifier = Modifier.size(20.dp)
